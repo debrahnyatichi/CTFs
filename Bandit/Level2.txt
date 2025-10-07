@@ -1,0 +1,9 @@
+Bandit Level 2
+#Level Goal
+The password for the next level is stored in a file called - located in the home directory
+
+#SOLN: 
+To open a - file use: cat ./- or cat -- -
+- is normally treated as “standard input” by commands, not a filename.
+Using ./- or -- - tells the command you really mean the file literally named -.
+

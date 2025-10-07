@@ -1,4 +1,4 @@
-Bandit Level 1
+﻿Bandit Level 1
 
 #Level Goal
 The password for the next level is stored in a file called readme located in the home directory. 
@@ -11,4 +11,5 @@ type: cat readme to fetch the password
 exit: to move from one level so to log into another
 ssh -p 2220 bandit1@bandit.labs.overthewire.org
 Enter the Password
+
 

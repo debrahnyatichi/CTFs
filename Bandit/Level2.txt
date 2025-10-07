@@ -1,10 +1,28 @@
 Bandit Level 2
-#Level Goal
+LEVEL GOAL
 The password for the next level is stored in a file called - located in the home directory
 
 
-Commands you may need to solve this level
+COMMANDS YOU MAY NEED FOR THIS LEVEL
 ls , cd , cat , file , du , find
+
+DISCUSSION:
+Dashed filename
+A "dashed filename" typically refers to a file name containing one or more hyphens or dashes (-).
+Challenges with Dashed Filenames
+Command Option Misinterpretation: When a filename begins with a dash, command-line utilities (like rm, mv, cp) might interpret it as a command-line option rather than a filename, leading to errors or unexpected behavior.
+Example: Attempting to remove a file named "-f"
+rm -f: This will likely be interpreted as the "force" option for rm, not the file itself.
+
+Strategies for Handling Dashed Filenames:
+1. Prefix with ./: To explicitly tell a command that you are referring to a file in the current directory, even if its name starts with a dash, prefix the filename with ./
+Example: Removing the file "-f": rm ./-f
+2. Use -- (Double Dash): Many commands recognize -- as a delimiter, indicating that all subsequent arguments are filenames and not command options.
+Example: Removing the file "-f": rm -- -f
+3. Quoting: Enclose the entire filename in single or double quotes to prevent the shell from interpreting special characters, including leading dashes.
+Example: Removing the file "-f": rm "-f"
+4. Use Inode Number (Advanced): For highly problematic filenames, you can find the file's inode number using ls -i and then use find -inum <inode_number> -delete to remove it. This method bypasses filename interpretation entirely.
+
 
 #SOLN: 
 To open a - file use: cat ./- or cat -- -

@@ -1,0 +1,8 @@
+BandiT Level 3
+LEVEL GOAL
+The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+
+COMMANDS YOU MAY NEED FOR THIS LEVEL
+ls , cd , cat , file , du , find
+
+DISCUSSION
